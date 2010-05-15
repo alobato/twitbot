@@ -33,6 +33,10 @@ def phrase
   "#{male_actions[rand(3)]} #{male_conectors[rand(4)]}"
 end
 
+def append(twitt, original_user, secound_user)
+  "RT @#{original_user}: #{twitt}. O que voce acha, @#{secound_user}?"
+end
+
 # puts phrase
 
 results = Twitter::Search.new("\"#{phrase}\"")
@@ -41,10 +45,12 @@ results = Twitter::Search.new("\"#{phrase}\"")
 
 # puts results[0].text
 
-puts results.methods
+# puts results.methods
 # 
 # results.each do |result|
 #   puts"@#{result.from_user}: "
 #   puts result.text
 #   puts "\n"
 # end
+
+
