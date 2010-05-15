@@ -1,0 +1,9 @@
+require 'rubygems'
+require 'rspec'
+require 'bot'
+
+describe "Testing" do
+  it "testing test should" do
+    true.should be_false
+  end
+end
